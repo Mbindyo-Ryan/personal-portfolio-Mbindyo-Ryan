@@ -1,63 +1,77 @@
+/* Background color for the whole page */
 body {
   font-family: Arial, sans-serif;
-  padding: 0 20px;
-  max-width: 900px;
-  margin: auto;
-  background: #f4f4f4;
+  margin: 0;
+  background-color: #f4f4f9; /* Light background */
+  color: #333;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #222;
+  padding: 10px 0;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  background: #333;
+  list-style: none;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0;
+  margin: 0 15px;
 }
 
 nav ul li a {
+  color: #ddd;
   text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  display: inline-block;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  background-color: #555;
-}
-
-header, section {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-form label {
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-form input, form textarea {
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  color: #4CAF50; /* Highlight active page */
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e3f2fd; /* Header background color */
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  border: 3px solid #4CAF50;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: #ddd;
+  position: fixed;
   width: 100%;
-  padding: 8px;
-  margin: 6px 0 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-}
-
-form button:hover {
-  background-color: #555;
+  bottom: 0;
 }
